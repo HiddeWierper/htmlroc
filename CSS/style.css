@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(240, 216, 220);
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  border-radius: 60px;
+  object-fit: cover;
+  padding: 3%;
+  width: 25%;
+  height: auto;
+}
+
+.catPhoto {
+  margin: auto;
+  display: flex;
+  position: space;
+  justify-content: center;
+  background-color: pink;
+  min-height: 200px;
+  height: fit-content;
+  width: 95%;
+  color: purple;
+  border-radius: 16px;
+}
+
+.thingsMyCatLoves {
+  text-align: left;
+  float: left;
+  margin-left: auto;
+}
+
+.thingsMyCatHates {
+  text-align: left;
+  float: right;
+  margin-right: auto;
+}
