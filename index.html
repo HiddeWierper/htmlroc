@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <head>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <title>catPage</title>
-    <link rel="icon" href="foto's/mythos_bank.jpg" />
-  </head>
+<head>
+  <script src="https://kit.fontawesome.com/c6d023de9c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+  <link rel="icon" href="foto's/mythos_bank.jpg" />
+  <title>catPage</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
 
-  <header>
-    <h1>CatPhotoApp</h1>
-    <hr />
-  </header>
+<header>
+  <div class="openBtn">
+    <span onclick="openNav()">&#9776;</span>
+  </div>
+  <h1 class="pageTitle">CatPhotoApp</h1>
+  <hr />
+</header>
 
-  <body>
-    <div id="myMenu" class="menu">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
+<body>
+  <div id="myMenu" class="menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
 
-    <h2>Cat Photos</h2>
-    <div class="catPhoto">
-      <img src="foto's/mythos_boom.jpg" />
-      <img src="foto's/mythos_voortuin.jpg" />
-      <img src="foto's/mythos_bank.jpg" />
-    </div>
+  <h2>Cat Photos</h2>
+  <div class="catPhoto">
+    <img src="foto's/mythos_boom.jpg" />
+    <img src="foto's/mythos_voortuin.jpg" />
+    <img src="foto's/mythos_bank.jpg" />
+  </div>
 
-    <div class="thingsMyCatLoves">
-      <h3>Things my cat Absolutly LOVE:</h3>
-      <ul>
-        <li>Catnip</li>
-        <li>Playing with cat toys</li>
-        <li>to hunt</li>
-      </ul>
-    </div>
-    <div class="thingsMyCatHates">
-      <h3>Things my cat Absolutly HATE:</h3>
-      <ul>
-        <li>Other cats</li>
-        <li>Thunder</li>
-        <li>Pills</li>
-      </ul>
-    </div>
+  <div class="thingsMyCatLoves">
+    <h3>Things my cat absolutely loves:</h3>
+    <ul>
+      <li>Catnip</li>
+      <li>Playing with cat toys</li>
+      <li>to hunt</li>
+      <li>mika</li>
+    </ul>
+  </div>
+  <div class="thingsMyCatHates">
+    <h3>Things my cat absolutely hates:</h3>
+    <ul>
+      <li>Other cats</li>
+      <li>Thunder</li>
+      <li>Pills</li>
+    </ul>
+  </div>
 
-    <div class="contactForm"></div>
-  </body>
+  <div class="contactForm"></div>
+
+  <script src="JS/script.js"></script>
+</body>
+
+<footer>
+  <div class="footerLeft">
+    <h1 class="menuEnd">Menu</h1>
+    <a href="index.html">Home</a><br><br>
+    <a href="#">FotoLijst</a><br><br>
+    <a href="#">About</a><br><br>
+    <a href="#">Contact</a><br><br>
+  </div>
+  <div class="footerMid">
+    <h1 class="menuEnd">Socials</h1>
+    <b>Klik op de icoontjes voor mijn Socials!</b><br>
+    <a href="https://www.instagram.com/hiddewierper/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://spotify.link/bNzBOi3ltDb" target="_blank" class="fa fa-spotify"></a>
+    <a href="https://www.facebook.com/hidde.wierper/" target="_blank" class="fa-brands fa-facebook"></a>
+    <a href="https://www.github.com/hiddewierper/" target="_blank" class="fa-brands fa-github"></a>
+
+  </div>
+  <div class="footerRight"></div>
+</footer>
+
 </html>

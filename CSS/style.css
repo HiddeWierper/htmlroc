@@ -1,6 +1,63 @@
 html {
   scroll-behavior: smooth;
   background-color: rgb(240, 216, 220);
+  font-family: "Raleway", sans-serif;
+}
+
+footer {
+  display: flex;
+  margin-top: 20%;
+}
+
+a {
+  color: black;
+  font-size: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  padding-right: 100%;
+  margin: 3%;
+}
+
+.fa{
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0;
+}
+ .fa-brands{
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0;
+ }
+
+b{
+  color: black;
+  font-size: 20px;
+}
+
+header {
+  padding: 0.1px;
+  color: white;
+}
+
+a:hover {
+  color: rgba(108, 108, 108, 0.637);
+  transition: 0.5s;
+}
+
+h1.menuEnd {
+  color: black;
+  font-size: 40px;
+}
+
+h1.pageTitle {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
 }
 
 h2 {
@@ -8,11 +65,66 @@ h2 {
 }
 
 img {
-  border-radius: 60px;
+  border-radius: 14%;
   object-fit: cover;
   padding: 3%;
   width: 25%;
   height: auto;
+  transition: 0.5s;
+}
+
+img:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+
+.openBtn {
+  font-size: 30px;
+  float: right;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(241, 151, 166);
+}
+
+.openBtn:hover {
+  color: rgba(246, 168, 181, 0.762);
+  transition: 0.5s;
+}
+
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #f1f1f1;
+}
+
+.menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .catPhoto {
@@ -38,4 +150,32 @@ img {
   text-align: left;
   float: right;
   margin-right: auto;
+}
+
+.footerLeft {
+  width: 15.33%;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 16px 0px 0px 16px;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  padding: 3% 8%;
+}
+
+.footerMid {
+  width: 48.33%;
+  min-height: 300px;
+  background-color: white;  
+  padding-top: 3%;
+  text-align: center;
+}
+
+.footerRight {
+  width: 33.33%;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 0px 16px 16px 0px;
+  align-items: left;
+  justify-content: left;
 }
