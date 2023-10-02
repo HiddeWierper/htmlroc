@@ -4,9 +4,16 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+hr{
+ 
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 99%;
+}
+
 footer {
   display: flex;
-  margin-top: 20%;
 }
 
 a {
@@ -15,8 +22,7 @@ a {
   transition: 0.5s;
   cursor: pointer;
   text-decoration: none;
-  padding-right: 100%;
-  margin: 3%;
+  padding: 0;
 }
 
 .fa{
@@ -25,6 +31,7 @@ a {
   text-align: center;
   text-decoration: none;
   padding: 0;
+  margin: 3%;
 }
  .fa-brands{
   font-size: 50px;
@@ -32,6 +39,7 @@ a {
   text-align: center;
   text-decoration: none;
   padding: 0;
+  margin: 3%;
  }
 
 b{
@@ -52,6 +60,7 @@ a:hover {
 h1.menuEnd {
   color: black;
   font-size: 40px;
+  padding: 0;
 }
 
 h1.pageTitle {
@@ -136,46 +145,39 @@ img:hover {
   min-height: 200px;
   height: fit-content;
   width: 95%;
-  color: purple;
   border-radius: 16px;
 }
 
-.thingsMyCatLoves {
-  text-align: left;
-  float: left;
-  margin-left: auto;
-}
-
-.thingsMyCatHates {
-  text-align: left;
-  float: right;
-  margin-right: auto;
+.footerLeft, .footerMid, .footerRight {
+  width: 33.33%;
+  box-sizing: border-box;
+  min-height: fit-content;
+  background-color: white;
 }
 
 .footerLeft {
-  width: 15.33%;
-  min-height: 300px;
-  background-color: white;
   border-radius: 16px 0px 0px 16px;
-  align-items: left;
-  justify-content: left;
   text-align: left;
-  padding: 3% 8%;
+  padding: 3% 0% 3% 8%;
 }
 
 .footerMid {
-  width: 48.33%;
-  min-height: 300px;
-  background-color: white;  
   padding-top: 3%;
   text-align: center;
 }
 
 .footerRight {
-  width: 33.33%;
-  min-height: 300px;
-  background-color: white;
   border-radius: 0px 16px 16px 0px;
-  align-items: left;
-  justify-content: left;
+  text-align: right;
+  padding: 3% 8% 3% 0;
+  font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
