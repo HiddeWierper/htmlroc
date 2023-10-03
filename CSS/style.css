@@ -5,7 +5,6 @@ html {
 }
 
 hr{
- 
   margin: auto;
   margin-top: 3%;
   margin-bottom: 3%;
@@ -25,22 +24,6 @@ a {
   padding: 0;
 }
 
-.fa{
-  font-size: 50px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  padding: 0;
-  margin: 3%;
-}
- .fa-brands{
-  font-size: 50px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  padding: 0;
-  margin: 3%;
- }
 
 b{
   color: black;
@@ -113,6 +96,7 @@ img:hover {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+ 
 }
 
 .menu a {
@@ -148,6 +132,69 @@ img:hover {
   border-radius: 16px;
 }
 
+.photoGallery{
+  margin:auto;  
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: space;
+  background-color: pink;
+  min-height: 200px;
+  height: fit-content;
+  width: 95%;
+  border-radius: 16px;
+  grid-gap: 15px;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6{
+  width: 100%;
+  height: 100%;
+}
+
+.img1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.img2{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.img3{
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.img4{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.img5{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.img6{
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 2;
+}
+
 .footerLeft, .footerMid, .footerRight {
   width: 33.33%;
   box-sizing: border-box;
@@ -171,6 +218,160 @@ img:hover {
   text-align: right;
   padding: 3% 8% 3% 0;
   font-size: 20px;
+}
+
+.fa{
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 3%;
+}
+
+.fa-brands{
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0;
+  margin: 3%;
+}
+
+.contactForm {
+    min-width: 39% ;
+    width: fit-content;
+    height: fit-content;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 3%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+input[type="text"], input[type="email"],input[type="phone"]{
+  width: 140%;
+  margin-bottom: 3%;
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 30px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+textarea{
+  width: 100%;
+  max-height: fit-content;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 8px 4px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type="submit"]{
+  height: auto;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: #f8eee7;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 8px 4px;
+  cursor: pointer;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 7px #666;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+ button:hover[type=submit]{
+  background-color: #e47c5ca5;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: Poppins;
+  transition: 0.5s;
+ }
+
+ @media screen and (min-width: 100px) and (max-width: 500px){
+  footer{
+    display: block;
+  }
+  .footerLeft, .footerMid, .footerRight{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .footerLeft{
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  .footerRight{
+    border-radius: 0px 0px 16px 16px;
+    padding-bottom: 5%;
+  }
+
+  img {
+    width: 80%;
+  }
+  .catPhoto {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    justify-content: left;
+  }
+  .scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  .scroll-container img {
+    padding: 10px;
+    scroll-snap-align: center;
+  }
+  img:hover {
+    transform: none;
+  }
+  .catPhoto::after {
+    content: ""; /* Voeg een pseudo-element toe aan het einde van .catPhoto */
+    flex: 0 0 10px; /* Ruimte tussen de laatste en de eerste afbeelding */
+  }
+
+  
+
+  
 }
 
 

@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/c6d023de9c.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,46 +31,48 @@
 <body>
   <div id="myMenu" class="menu">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="catGallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
   </div>
 
   <h2>Cat Photos</h2>
-  <div class="catPhoto">
-    <img src="foto's/mythos_boom.jpg" />
-    <img src="foto's/mythos_voortuin.jpg" />
-    <img src="foto's/mythos_bank.jpg" />
+  <div class="scroll-container">
+    <div class="catPhoto">
+      <img src="foto's/mythos_boom.jpg" />
+      <img src="foto's/mythos_voortuin.jpg" />
+      <img src="foto's/mythos_bank.jpg" />
+    </div>
   </div>
 
   <script src="JS/script.js"></script>
+
+
+  <hr>
+
+  <footer>
+    <div class="footerLeft">
+      <h1 class="menuEnd">Menu</h1>
+      <a href="index.html">Home</a><br><br>
+      <a href="#">FotoLijst</a><br><br>
+      <a href="#">About</a><br><br>
+      <a href="#">Contact</a><br><br>
+    </div>
+    <div class="footerMid">
+      <h1 class="menuEnd">Socials</h1>
+      <b>Klik op de icoontjes voor mijn Socials!</b><br>
+      <a href="https://www.instagram.com/hiddewierper/" target="_blank" class="fa fa-instagram"></a>
+      <a href="https://spotify.link/bNzBOi3ltDb" target="_blank" class="fa fa-spotify"></a>
+      <a href="https://www.facebook.com/hidde.wierper/" target="_blank" class="fa-brands fa-facebook"></a>
+      <a href="https://www.github.com/hiddewierper/" target="_blank" class="fa-brands fa-github"></a>
+    </div>
+    <div class="footerRight">
+      <h1 class="menuEnd">Contact</h1>
+      <p>Hidde Wierper</p>
+      <a href="mailto: hidde.wierper@student.rocvf.nl">hidde.wierper@student.rocvf.nl</a><br><br>
+      <a href="tel: 0617705036">06 177 050 36</a>
+    </div>
+  </footer>
 </body>
-
-<hr>
-
-<footer>
-  <div class="footerLeft">
-    <h1 class="menuEnd">Menu</h1>
-    <a href="index.html">Home</a><br><br>
-    <a href="#">FotoLijst</a><br><br>
-    <a href="#">About</a><br><br>
-    <a href="#">Contact</a><br><br>
-  </div>
-  <div class="footerMid">
-    <h1 class="menuEnd">Socials</h1>
-    <b>Klik op de icoontjes voor mijn Socials!</b><br>
-    <a href="https://www.instagram.com/hiddewierper/" target="_blank" class="fa fa-instagram"></a>
-    <a href="https://spotify.link/bNzBOi3ltDb" target="_blank" class="fa fa-spotify"></a>
-    <a href="https://www.facebook.com/hidde.wierper/" target="_blank" class="fa-brands fa-facebook"></a>
-    <a href="https://www.github.com/hiddewierper/" target="_blank" class="fa-brands fa-github"></a>
-  </div>
-  <div class="footerRight">
-    <h1 class="menuEnd">Contact</h1>
-    <p>Hidde Wierper</p>
-    <a href="mailto: hidde.wierper@student.rocvf.nl">hidde.wierper@student.rocvf.nl</a><br><br>
-    <a href="tel: 0617705036">06 177 050 36</a>
-  </div>
-</footer>
 
 </html>

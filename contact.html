@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+
+    <script src="JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/c6d023de9c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+    <link rel="icon" href="foto's/mythos_bank.jpg" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<header>
+    <div class="openBtn">
+        <span onclick="openNav()">&#9776;</span>
+    </div>
+    <h1 class="pageTitle">Contact</h1>
+
+    <hr />
+
+    <div id="myMenu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="catGallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</header>
+
+<body>
+    <div class="contactForm">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <input type="hidden" name="access_key" value="c06fb134-949e-4ac2-a810-90c0128089f2" />
+            <input type="hidden" name="from_name" value="WeFormConsultancy">
+            <input type="hidden" name="subject" value="U heeft 1 nieuw bericht!" />
+
+            <div class="mb-2">
+                <label for="name">Wat is je naam?</label><br>
+                <input type="text" name="name" id="name" placeholder="Voor en achternaam" required />
+            </div>
+            <div class="mb-3">
+                <label for="email">Email Adres</label><br>
+                <input type="email" name="email" id="email" placeholder="Email adres" required />
+            </div>
+            <div class="mb-4">
+                <label for="phone">Telefoonnummer</label><br>
+                <input type="text" name="phone" id="phone" placeholder="+31 6 12345678" />
+            </div>
+            <div class="mb-5">
+                <label for="onderwerp">Onderwerp</label><br>
+                <input type="text" name="Onderwerp" id="onderwerp" placeholder="Onderwerp" required />
+            </div>
+            <div class="mb-6">
+                <label for="message">Uw bericht</label><br>
+                <textarea name="message" id="message" placeholder="Uw bericht" required></textarea>
+            </div>
+            <div class="mb-7">
+                <button type="submit"><i class="fa fa-paper-plane" style="font-size: medium;"></i></button>
+            </div>
+            <p class="text-base text-center text-gray-400" id="result"></p>
+        </form>
+    </div>
+</body>
+
+<hr>
+
+<footer>
+    <div class="footerLeft">
+        <h1 class="menuEnd">Menu</h1>
+        <a href="index.html">Home</a><br><br>
+        <a href="#">FotoLijst</a><br><br>
+        <a href="#">About</a><br><br>
+        <a href="#">Contact</a><br><br>
+    </div>
+    <div class="footerMid">
+        <h1 class="menuEnd">Socials</h1>
+        <b>Klik op de icoontjes voor mijn Socials!</b><br>
+        <a href="https://www.instagram.com/hiddewierper/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://spotify.link/bNzBOi3ltDb" target="_blank" class="fa fa-spotify"></a>
+        <a href="https://www.facebook.com/hidde.wierper/" target="_blank" class="fa-brands fa-facebook"></a>
+        <a href="https://www.github.com/hiddewierper/" target="_blank" class="fa-brands fa-github"></a>
+    </div>
+    <div class="footerRight">
+        <h1 class="menuEnd">Contact</h1>
+        <p>Hidde Wierper</p>
+        <a href="mailto: hidde.wierper@student.rocvf.nl">hidde.wierper@student.rocvf.nl</a><br><br>
+        <a href="tel: 0617705036">06 177 050 36</a>
+    </div>
+</footer>
+
+</html>
