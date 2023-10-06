@@ -4,6 +4,10 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+span {
+  cursor: pointer;
+}
+
 hr {
   margin: auto;
   margin-top: 3%;
@@ -259,6 +263,7 @@ img:hover {
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
+  box-shadow: 10px 10px 15px #999;
 }
 
 
